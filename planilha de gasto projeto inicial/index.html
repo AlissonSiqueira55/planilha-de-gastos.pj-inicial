@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Soma de Gastos</title>
+	<link rel="stylesheet" type="text/css" href="stylo/stylo.css">
+</head>
+<script src="main.js/stylo.js"></script>
+
+
+<body>
+	<header>
+		<h1>Projeto de planilha de gastos;</h1>
+	</header>
+	<main>
+		<form>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Dia da semana</th>
+                    <th>Gasto da pessoa 1</th>
+                    <th>Gasto da pessoa 2</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Segunda-feira</td>
+                    <td><input type="number" id="segunda1"></td>
+                    <td><input type="number" id="segunda2"></td>
+                    <td><input type="number" id="totalSegunda"></td>
+                  </tr>
+                  <tr>
+                    <td>Terça-feira</td>
+                    <td><input type="number" id="terca1"></td>
+                    <td><input type="number" id="terca2"></td>
+                    <td><input type="number" id="totalTerca"></td>
+                  </tr>
+                  <tr>
+                    <td>Quarta-feira</td>
+                    <td><input type="number" id="quarta1"></td>
+                    <td><input type="number" id="quarta2"></td>
+                    <td><input type="number" id="totalQuarta"></td>
+                  </tr>
+                  <tr>
+                    <td>Quinta-feira</td>
+                    <td><input type="number" id="quinta1"></td>
+                    <td><input type="number" id="quinta2"></td>
+                    <td><input type="number" id="totalQuinta"></td>
+                  </tr>
+                  <tr>
+                    <td>Sexta-feira</td>
+                    <td><input type="number" id="sexta1"></td>
+                    <td><input type="number" id="sexta2"></td>
+                    <td><input type="number" id="totalSexta"></td>
+                    div id="tabela-gastos">
+  <table>
+    <!-- Tabela de gastos com dias da semana e valores -->
+  </table>
+
+  <!-- Campo de total semanal -->
+  <input type="number" id="totalSemana">
+</div>
+                  </tr>
+                </tbody>
+              </table>
+              <button onclick="calcularGastosSemana()">Calcular gastos da semana</button>
+
+			<label for="pessoa1">Gastos da Pessoa 1:</label>
+			<input type="number" id="pessoa1" name="pessoa1"><br>
+
+			<label for="pessoa2">Gastos da Pessoa 2:</label>
+			<input type="number" id="pessoa2" name="pessoa2"><br>
+
+			<input type="button" value="Calcular" onclick="calcularTotal()">
+
+			<label for="total">Total de Gastos:</label>
+			<input type="number" id="total" name="total" readonly><br>
+		</form>
+	</main>
+	<footer>
+		<p>Desenvolvido por Alisson Siqueira </p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
